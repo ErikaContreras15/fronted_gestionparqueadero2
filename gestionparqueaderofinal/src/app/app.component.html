@@ -1,0 +1,36 @@
+<!--------------------------------Encabezado ------------------------------>
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">
+        <img src="../assets/img/carroLogo.jpg" alt="Chromatools" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a routerLink="/inicio">Inicio</a></li>
+          <li><a routerLink="/nosotros">Nosotros</a></li>
+          <li><a routerLink="/parqueadero">Parqueadero</a></li>
+          <li><a routerLink="/contrato">Contratos</a></li>
+          <li><a routerLink="/historialUso">Historial Uso</a></li>
+         <!----------Visible solo para el Administrador
+             <li *ngIf="isAuthenticated && isAdministrador"><a routerLink="/tarifa">TARIFA</a></li>  
+             <li *ngIf="isAuthenticated && isAdministrador"><a routerLink="/seccionHorarios">HORARIOS</a></li>       
+             <li *ngIf="isAuthenticated && isAdministrador"><a routerLink="/administracion-clientes-lista">CLIENTES REGISTRADOS</a></li>  
+        --------Visible solo para el Cliente---
+             <li *ngIf="isAuthenticated && isClientecliente"><a routerLink="/perfil">PERFIL</a></li> ------------>
+            </ul>
+      </nav>
+      
+      <div class="auth-buttons">
+        <!-- Botones de Iniciar Sesión y Registro solo se muestran si no está autenticado 
+        <a *ngIf="!isAuthenticated" routerLink="/iniciarSesion" class="sign-in-btn">Iniciar Sesión</a>
+        <a *ngIf="!isAuthenticated" routerLink="/registro" class="sign-up-btn">Registro</a>-->
+
+        <!-- Botón de Cerrar Sesión solo se muestra si el usuario está autenticado 
+        <button *ngIf="isAuthenticated" (click)="cerrarSesion()" class="sign-out-btn">Cerrar Sesión</button>-->
+      </div>
+    </div>
+  </div>
+</header>
+
+<router-outlet></router-outlet>

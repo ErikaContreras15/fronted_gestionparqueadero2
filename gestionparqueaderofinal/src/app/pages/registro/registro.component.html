@@ -1,0 +1,38 @@
+<div class="container"> 
+    <div class="izq">
+      <img src="../../../assets/img/LOGOINI.png" alt="Logo de la aplicación">
+    </div>
+    <div class="registration-form">
+      <h1>Registro de Cliente</h1>
+     <!--- <form (ngSubmit)="registrar()">---->
+        <div class="form-group">
+          <label for="nombre" class="label">Nombre:</label>
+           <!----<input type="text" id="nombre" class="input" [(ngModel)]="usuario.nombre" name="nombre" placeholder="Ingrese su nombre">--> 
+        </div>
+        <div class="form-group">
+          <label for="usuario" class="label">Usuario:</label>
+           <!----<input type="text" id="usuario" class="input" [(ngModel)]="usuario.username" name="usuario" placeholder="Ingrese su usuario">--> 
+        </div>
+        <div class="form-group">
+          <label for="email" class="label">Correo electrónico:</label>
+           <!----<input type="email" id="email" class="input" [(ngModel)]="usuario.email" name="email" placeholder="Ingrese su correo electrónico">--> 
+        </div>
+        <div class="form-group">
+          <label for="contrasena" class="label">Contraseña:</label>
+          <!---<input type="password" id="contrasena" class="input" [(ngModel)]="usuario.contrasena" name="contrasena" placeholder="Ingrese su contraseña">--> 
+           <!----<p *ngIf="mensajeErrorEmail" class="error">{{ mensajeErrorEmail }}</p>--> 
+        </div>
+        <div class="form-group">
+          <label for="telefono" class="label">Telefono:</label>
+        <!-----<textarea id="telefono" class="input" [(ngModel)]="usuario.telefono" name="telefono" placeholder="Ingrese su numero de telefono"></textarea>--> 
+        </div>
+        <div class="form-group">
+          <label for="biografia" class="label">Biografía:</label>
+           <!----<textarea id="biografia" class="input" [(ngModel)]="usuario.biografia" name="biografia" placeholder="Ingrese su biografía"></textarea>--> 
+        </div>
+        <button type="submit" class="button">Registrar</button>
+      <!---</form>--->
+       <!----<button class="button button-secondary" (click)="redirigirALogin()">¿Ya tienes cuenta? Inicia sesión</button>--> 
+    </div>
+  </div>
+  
