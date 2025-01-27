@@ -8,6 +8,7 @@ export class Usuario {
     public rol?: 'cliente' | 'administrador';
     public telefono?: string;
     public biografia?: string;
+    public notificacionActiva?: boolean;
 
 
     //Para el administrador Observe y modifique la informacion
