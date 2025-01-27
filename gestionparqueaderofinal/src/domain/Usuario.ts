@@ -1,6 +1,6 @@
 
 export class Usuario {
-    public id?: string;
+    public id?: number;
     public username: string = '';
     public contrasena: string = '';
     public nombre?: string;
@@ -14,7 +14,8 @@ export class Usuario {
     //Para el administrador Observe y modifique la informacion
     //de los clientes registrados
     constructor(data: Partial<Usuario> = {}) {
-      this.id = data.id || '';
+      /*this.id = data.id || '';*/
+      this.id = data.id || undefined; // Maneja number o string
       this.username = data.username || '';
       this.contrasena = data.contrasena || '';
       this.nombre = data.nombre || '';

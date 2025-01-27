@@ -10,13 +10,14 @@ import { ContratoComponent } from './components/contrato/contrato.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { AdministracionClientesComponent } from './components/administracion-clientes/administracion-clientes.component';
 import { HorarioComponent } from './components/horario/horario.component';
-
+import { UsuarioComponent } from './components/usuario/usuario.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/inicio', pathMatch: 'full' },
     { path: 'inicio', component: InicioComponent },
     { path: 'iniciarSesion', component: IniciarSesionComponent },
     { path: 'registro', component: RegistroComponent },
+    { path: 'usuarios', component: UsuarioComponent },
     { path: 'tarifa', component: TarifaComponent },
     { path: 'contrato', component: ContratoComponent },
     { path: 'nosotros', component: NosotrosComponent },

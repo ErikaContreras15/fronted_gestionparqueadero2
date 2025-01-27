@@ -1,1 +1,11 @@
-<p>usuario works!</p>
+<section id="usuarios">
+<div class="container mt-3">
+    <h2>Lista de Usuarios</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let usuario of usuarios">
+        {{ usuario.nombre }} - {{ usuario.email }}
+        <button class="btn btn-danger btn-sm float-end" (click)="eliminarUsuario(usuario.id)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+</section>
